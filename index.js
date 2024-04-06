@@ -38,8 +38,11 @@ let soal = document.getElementById("soal");
 let hasil = 0;
 let vol = document.getElementById("myMusic");
 let backButton = document.getElementById("back");
+let reset = document.getElementById("reset");
 
 vol.volume = 0;
+
+reset.style.display = "none";
 
 // function goBack() {
 //   window.location.href = "/firzaportfolio/index.html#portfolio";
@@ -54,11 +57,14 @@ buttonStart.onclick = function start() {
   document.getElementById("jawaban").focus();
   vol.volume = 0.5;
   buttonStart.style.display = "none";
+  document.getElementById("back").style.display = "none";
+  reset.style.display = "block";
   timer();
   let acak = random;
   document.getElementById("soal").value = kata[acak];
   return;
 };
+
 jawaban.oninput = function cek() {
   if (jawaban.value === soal.value) {
     soal.value = kata[Math.floor(Math.random() * 29)];

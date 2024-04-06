@@ -23,12 +23,23 @@
         <div> Score </div>
         <p type="text" id="skor" value="0" class="ukuranW"></p>
         <label for="jawab">TYPE HERE</label><br>
-        <input class="jawaban"id="jawaban" type="text" name="jawab" rows="3">
-        </input><br>
-        <button id="start" class="btn btn-primary" style="color: white;">START</button>
-        <button class="btn btn-primary" style="color: white;">
-            <a href="https://portfoliosaya.github.io/firza/#portfolio" style="text-decoration: none; color:white">BACK</a>
-        </button>
+        <input class="jawaban text-lowercase" id="jawaban" type="text" name="jawab" rows="3">
+        </input>
+        <div class="row">
+            <div class="col-12 ml-10 ml-reset">
+                <button id="reset" class="btn btn-primary ml-reset" style="color: white; margin-left: 160px;">
+                    <a href="" onclick="location.reload()" style="text-decoration: none; color:white">RESET</a>
+                </button>
+            </div>
+            <div class="col mb-3" style="margin-left: 80px;">         
+                <button id="start" class="btn btn-primary" style="color: white;">START</button>
+            </div>
+            <div class="col" style="margin-left: 75px;">
+                <button id="back" class="btn btn-primary" style="color: white;">
+                    <a href="https://portfoliosaya.github.io/firza/#portfolio" style="text-decoration: none; color:white">BACK</a>
+                </button>            
+            </div>
+        </div>
     </div>
     <div class="footer">
         <footer class="nav2"> © 2020 Firza KZ.  All rights reserved.</footer>
