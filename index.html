@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="icon.jpg">
+    <title>Typing Ninja</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
+
+</head>
+<audio id ="myMusic" controls autoplay>
+    <source src="st.mp3" type="audio/mpeg">
+  Your browser does not support the audio element.
+  </audio> 
+<body class="body">
+    <div class="title">
+        <h1 class="nav">LET'S SEE YOUR TYPING SKILL</h1>
+    </div>
+    <div class="konten">
+        <input class="soal" id="soal" type="text" disabled></input>
+        <div class="waktu" id="demo" class="ukuranW"></div>
+        <div> Score </div>
+        <p type="text" id="skor" value="0" class="ukuranW"></p>
+        <label for="jawab">TYPE HERE</label><br>
+        <input class="jawaban"id="jawaban" type="text" name="jawab" rows="3">
+        </input><br>
+        <button id="start" class="btn btn-primary" style="color: white;">START</button>
+        <button onclick="goBack()" class="btn btn-primary" style="color: white;">
+            <a href="/index.html" style="text-decoration: none; color:white">BACK</a>
+        </button>
+    </div>
+    <div class="footer">
+        <footer class="nav2"> © 2020 Firza KZ.  All rights reserved.</footer>
+    </div>
+    <script src="index.js">
+    </script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+</body>
+</html>
