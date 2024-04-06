@@ -6,7 +6,7 @@
   overflow: hidden;
   position: fixed;
   top: 0;
-  height: 200px;
+  height: 150px;
   width: 100%;
   left: 0;
   text-align: center;
@@ -16,7 +16,7 @@
   top: 320px;
   text-align: center;
   width: 100%;
-  padding-top: 180px;
+  padding-top: 10px;
 }
 
 .konten label {
