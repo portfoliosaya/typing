@@ -41,9 +41,9 @@ let backButton = document.getElementById("back");
 
 vol.volume = 0;
 
-function goBack() {
-  window.location.href = "/firzaportfolio/index.html#portfolio";
-}
+// function goBack() {
+//   window.location.href = "/firzaportfolio/index.html#portfolio";
+// }
 
 if (location.reload) {
   soal.value = "               ";
