@@ -76,7 +76,7 @@ jawaban.oninput = function cek() {
 };
 
 function timer() {
-  var seconds = 35;
+  var seconds = 34;
   var x = setInterval(function () {
     seconds--;
     document.getElementById("demo").innerHTML = seconds + " Second";
@@ -85,17 +85,28 @@ function timer() {
       document.getElementById("demo").innerHTML = "Time's Up";
       document.getElementById("jawaban").disabled = true;
 
-      if (hasil <= 20) {
-        alert(`Newbie Score Anda ${hasil}`);
+      if (hasil <= 19) {
+        Swal.fire({
+          title: "Kurang",
+          text: `Nilai Anda ${hasil}`,
+          icon: "warning",
+        });
         soal.value = "                ";
-      } else if (hasil > 20 && hasil < 27) {
-        alert(`Good Job Score Anda ${hasil}`);
+      } else if (hasil >= 20 && hasil <= 25) {
+        Swal.fire({
+          title: "Cukup",
+          text: `Nilai Anda ${hasil}`,
+          icon: "info",
+        });
         soal.value = "                ";
       } else {
-        alert(`Pro Score Anda ${hasil}`);
+        Swal.fire({
+          title: "Bagus !!!",
+          text: `Nilai Anda ${hasil}`,
+          icon: "success",
+        });
         soal.value = "                ";
       }
-      location.reload();
       soal.value = "                    ";
     }
   }, 1000);
